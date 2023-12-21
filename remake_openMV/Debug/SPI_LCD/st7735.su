@@ -1,0 +1,10 @@
+../SPI_LCD/st7735.c:33:6:ST7735_Reset	8	static
+../SPI_LCD/st7735.c:41:6:ST7735_WriteCommand	16	static
+../SPI_LCD/st7735.c:49:6:ST7735_WriteData	16	static
+../SPI_LCD/st7735.c:57:6:ST7735_SetRotation	24	static
+../SPI_LCD/st7735.c:81:6:ST7735_Init	8	static
+../SPI_LCD/st7735.c:176:6:ST7735_SetAddressWindow	24	static
+../SPI_LCD/st7735.c:197:6:ST7735_DrawRectangle	32	static
+../SPI_LCD/st7735.c:209:6:ST7735_DrawPixel	24	static
+../SPI_LCD/st7735.c:224:6:ST7735_FillScreen	24	static
+../SPI_LCD/st7735.c:229:6:ST7735_DrawImage	32	static

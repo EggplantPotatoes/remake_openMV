@@ -1,0 +1,2 @@
+../Middlewares/Third_Party/FatFs/src/option/cc936.c:10923:7:ff_convert	40	static
+../Middlewares/Third_Party/FatFs/src/option/cc936.c:10960:7:ff_wtoupper	32	static
