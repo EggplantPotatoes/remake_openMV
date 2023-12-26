@@ -1,0 +1,11 @@
+../Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Src/usbd_composite_builder.c:359:10:USBD_CMPSIT_AddClass	24	static
+../Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Src/usbd_composite_builder.c:428:10:USBD_CMPSIT_AddToConfDesc	24	static
+../Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Src/usbd_composite_builder.c:844:11:USBD_CMPSIT_GetFSCfgDesc	16	static
+../Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Src/usbd_composite_builder.c:870:11:USBD_CMPSIT_GetOtherSpeedCfgDesc	16	static
+../Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Src/usbd_composite_builder.c:882:11:USBD_CMPSIT_GetDeviceQualifierDescriptor	16	static
+../Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Src/usbd_composite_builder.c:894:16:USBD_CMPSIT_FindFreeIFNbr	32	static
+../Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Src/usbd_composite_builder.c:919:14:USBD_CMPSIT_AddConfDesc	24	static
+../Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Src/usbd_composite_builder.c:951:14:USBD_CMPSIT_AssignEp	32	static
+../Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Src/usbd_composite_builder.c:1901:11:USBD_CMPSIT_SetClassID	32	static
+../Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Src/usbd_composite_builder.c:1941:11:USBD_CMPSIT_GetClassID	32	static
+../Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Src/usbd_composite_builder.c:1976:9:USBD_CMPST_ClearConfDesc	16	static

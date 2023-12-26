@@ -47,7 +47,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../USB_DEVICE/Target/usbd_conf.h ../Core/Inc/gpio.h \
  F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/lcd_display.h \
  F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/st7735.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/SD_FatFS/file_system.h
+ F:/STM32_camera/remake_openMV/source_code/remake_openMV/SD_FatFS/file_system.h \
+ F:/STM32_camera/remake_openMV/source_code/remake_openMV/user_usb/usb_vcp.h
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -105,3 +106,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/lcd_display.h:
 F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/st7735.h:
 F:/STM32_camera/remake_openMV/source_code/remake_openMV/SD_FatFS/file_system.h:
+F:/STM32_camera/remake_openMV/source_code/remake_openMV/user_usb/usb_vcp.h:

@@ -27,6 +27,8 @@ Core/Startup \
 Drivers/STM32H7xx_HAL_Driver/Src \
 FATFS/App \
 FATFS/Target \
+Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src \
+Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Src \
 Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src \
 Middlewares/ST/STM32_USB_Device_Library/Core/Src \
 Middlewares/Third_Party/FatFs/src \
@@ -35,4 +37,5 @@ SD_FatFS \
 SPI_LCD \
 USB_DEVICE/App \
 USB_DEVICE/Target \
+user_usb \
 
