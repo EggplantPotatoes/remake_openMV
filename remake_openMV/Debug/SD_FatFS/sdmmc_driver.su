@@ -1,5 +1,0 @@
-../SD_FatFS/sdmmc_driver.c:16:6:SD_Init	8	static
-../SD_FatFS/sdmmc_driver.c:25:9:SD_GetCardInfo	24	static
-../SD_FatFS/sdmmc_driver.c:35:9:SD_GetCardState	8	static
-../SD_FatFS/sdmmc_driver.c:45:9:SD_ReadDisk	56	static,ignoring_inline_asm
-../SD_FatFS/sdmmc_driver.c:72:9:SD_WriteDisk	56	static,ignoring_inline_asm

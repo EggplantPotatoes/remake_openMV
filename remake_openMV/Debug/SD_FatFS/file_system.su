@@ -1,2 +1,0 @@
-../SD_FatFS/file_system.c:22:6:FatFs_read_Check	16	static
-../SD_FatFS/file_system.c:41:6:FatFs_write_Check	16	static
