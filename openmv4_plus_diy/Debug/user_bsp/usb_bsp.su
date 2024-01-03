@@ -1,0 +1,2 @@
+../user_bsp/usb_bsp.c:8:6:usb_printf	2064	static
+../user_bsp/usb_bsp.c:20:6:usb_send_data	16	static

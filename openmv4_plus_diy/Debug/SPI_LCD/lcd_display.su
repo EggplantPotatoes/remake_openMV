@@ -1,0 +1,7 @@
+../SPI_LCD/lcd_display.c:14:6:lcd_display_image	32	static
+../SPI_LCD/lcd_display.c:25:6:LCD_ShowChar	32	static
+../SPI_LCD/lcd_display.c:64:10:LCD_Pow	24	static
+../SPI_LCD/lcd_display.c:78:6:LCD_ShowNum	48	static
+../SPI_LCD/lcd_display.c:110:6:LCD_ShowxNum	48	static
+../SPI_LCD/lcd_display.c:140:6:LCD_ShowString	40	static
+../SPI_LCD/lcd_display.c:162:6:lcd_init	8	static
