@@ -43,6 +43,7 @@ void ST7735_WriteCommand(uint8_t cmd)
   HAL_GPIO_WritePin(LCD_RS_GPIO_Port, LCD_RS_Pin, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(LCD_CS_GPIO_Port, LCD_CS_Pin, GPIO_PIN_RESET);
   HAL_SPI_Transmit(&hspi2, &cmd, 1, 100);
+//  HAL_SPI_Transmit_DMA(&hspi2, &cmd, 1);
   HAL_GPIO_WritePin(LCD_CS_GPIO_Port, LCD_CS_Pin, GPIO_PIN_SET);
 }
 
@@ -51,8 +52,19 @@ void ST7735_WriteData(uint8_t data)
   HAL_GPIO_WritePin(LCD_RS_GPIO_Port, LCD_RS_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(LCD_CS_GPIO_Port, LCD_CS_Pin, GPIO_PIN_RESET);
   HAL_SPI_Transmit(&hspi2, &data, 1, 100);
+//  HAL_SPI_Transmit_DMA(&hspi2, &data, 1);
   HAL_GPIO_WritePin(LCD_CS_GPIO_Port, LCD_CS_Pin, GPIO_PIN_SET);
 }
+
+void ST7735_WriteBuf(uint8_t* data,uint16_t len)
+{
+  HAL_GPIO_WritePin(LCD_RS_GPIO_Port, LCD_RS_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(LCD_CS_GPIO_Port, LCD_CS_Pin, GPIO_PIN_RESET);
+  HAL_SPI_Transmit(&hspi2, data, len, 100);
+//  HAL_SPI_Transmit_DMA(&hspi2, &data, 1);
+  HAL_GPIO_WritePin(LCD_CS_GPIO_Port, LCD_CS_Pin, GPIO_PIN_SET);
+}
+
 
 void ST7735_SetRotation(uint8_t rotation)
 {
@@ -208,16 +220,15 @@ void ST7735_DrawRectangle(uint16_t x, uint16_t y, uint16_t width, uint16_t heigh
 
 void ST7735_DrawPixel(uint16_t x, uint16_t y, uint16_t color)
 {
+	uint8_t data[2];
     if((x >= ST7735_WIDTH) || (y >= ST7735_HEIGHT))
         return;
 
     ST7735_SetAddressWindow(x, y, x+1, y+1);
     ST7735_WriteCommand(ST7735_RAMWR);
-    uint8_t data[2];
-		data[0] = color >> 8;
-		data[1] = color & 0xFF;
-		ST7735_WriteData(data[0]);
-		ST7735_WriteData(data[1]);
+	data[0] = color >> 8;
+	data[1] = color & 0xFF;
+	ST7735_WriteBuf(data,2);
 
 }
 
@@ -226,16 +237,21 @@ void ST7735_FillScreen(uint16_t color)
   ST7735_DrawRectangle(0, 0, ST7735_WIDTH, ST7735_HEIGHT, color);
 }
 
-void ST7735_DrawImage(uint16_t x, uint16_t y, uint16_t width, uint16_t height, const uint8_t *image)
+void ST7735_DrawImage(uint16_t x, uint16_t y, uint16_t width, uint16_t height,  uint16_t *image)
 {
-  ST7735_SetAddressWindow(x, y, x + width - 1, y + height - 1);
+  uint8_t frame_tmp[160*128*2] = {0};
 
-  ST7735_WriteCommand(ST7735_RAMWR);
-  for (uint32_t i = 0; i < width * height; i++)
-  {
-    ST7735_WriteData(image[i * 2]);
-    ST7735_WriteData(image[i * 2 + 1]);
-  }
+   //大小端数据转换
+    for (uint32_t i = 0; i < width * height; i++)
+    {
+    	frame_tmp[2*i] = (image[i] >> 8);
+    	frame_tmp[2*i+1] =(image[i] & 0xFF);
+    }
+    ST7735_SetAddressWindow(x, y, x + width - 1, y + height - 1);
+
+    ST7735_WriteCommand(ST7735_RAMWR);
+    ST7735_WriteBuf((uint8_t*)frame_tmp,width*height*2);
+
 }
 
 

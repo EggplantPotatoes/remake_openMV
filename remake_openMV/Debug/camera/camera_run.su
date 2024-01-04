@@ -1,0 +1,7 @@
+../camera/camera_run.c:42:6:camera_RGB565_init	16	static
+../camera/camera_run.c:71:6:camera_JPEG_init	16	static
+../camera/camera_run.c:101:6:camera_init	24	static
+../camera/camera_run.c:138:6:HAL_DCMI_FrameEventCallback	16	static,ignoring_inline_asm
+../camera/camera_run.c:153:6:ov5640_dcmi_start	24	static
+../camera/camera_run.c:186:6:TFT_LCD_RGB565_run	16	static
+../camera/camera_run.c:206:6:JPEG_run	16	static

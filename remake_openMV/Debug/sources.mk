@@ -37,5 +37,6 @@ SD_FatFS \
 SPI_LCD \
 USB_DEVICE/App \
 USB_DEVICE/Target \
-user_usb \
+camera \
+user_bsp \
 

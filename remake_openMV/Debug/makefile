@@ -9,7 +9,8 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include user_usb/subdir.mk
+-include user_bsp/subdir.mk
+-include camera/subdir.mk
 -include USB_DEVICE/Target/subdir.mk
 -include USB_DEVICE/App/subdir.mk
 -include SPI_LCD/subdir.mk

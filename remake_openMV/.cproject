@@ -61,6 +61,8 @@
 									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
 									<listOptionValue builtIn="false" value="../Middlewares/ST/STM32_USB_Device_Library/Class/CompositeBuilder/Inc"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/remake_openMV/user_usb}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/remake_openMV/user_bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/remake_openMV/camera}&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1670061070" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -87,14 +89,15 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="SD_FatFS"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="user_bsp"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="SPI_LCD"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="camera"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="FATFS"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="SD_FatFS"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="SPI_LCD"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="USB_DEVICE"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="user_usb"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -189,18 +192,21 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.pathentry"/>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="remake_openMV.null.1791191913" name="remake_openMV"/>
+		<project id="remake_openMV.null.543891289" name="remake_openMV"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.797704560;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.797704560.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.1220706110;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1670061070">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.855400585;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.855400585.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.273126294;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.870299484">
 			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.904354963;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.904354963.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.225269202;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.905453771">
+		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1295491928;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1295491928.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.1488389349;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.821499228">
 			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
-	<storageModule moduleId="refreshScope"/>
 </cproject>

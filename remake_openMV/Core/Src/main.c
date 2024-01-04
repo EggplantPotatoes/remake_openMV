@@ -18,8 +18,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dcmi.h"
 #include "dma.h"
 #include "fatfs.h"
+#include "i2c.h"
 #include "sdmmc.h"
 #include "spi.h"
 #include "usb_device.h"
@@ -30,6 +32,7 @@
 #include "lcd_display.h"
 #include "file_system.h"
 #include "usb_vcp.h"
+#include "camera_run.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -97,10 +100,15 @@ int main(void)
   MX_USB_DEVICE_Init();
   MX_SDMMC1_SD_Init();
   MX_FATFS_Init();
+  MX_DCMI_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   lcd_init();
   FatFs_read_Check();
   FatFs_write_Check();
+//  camera_RGB565_init();
+  camera_JPEG_init();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -110,13 +118,15 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  HAL_GPIO_TogglePin(LED_R_GPIO_Port,LED_R_Pin);
-	  HAL_Delay(500);
-	  HAL_GPIO_TogglePin(LED_G_GPIO_Port,LED_G_Pin);
-	  HAL_Delay(500);
-	  HAL_GPIO_TogglePin(LED_B_GPIO_Port,LED_B_Pin);
-	  HAL_Delay(500);
-	  usb_printf("openmv4 plus board cdc test\r\n");
+//	  HAL_GPIO_TogglePin(LED_R_GPIO_Port,LED_R_Pin);
+//	  HAL_Delay(500);
+//	  HAL_GPIO_TogglePin(LED_G_GPIO_Port,LED_G_Pin);
+//	  HAL_Delay(500);
+//	  HAL_GPIO_TogglePin(LED_B_GPIO_Port,LED_B_Pin);
+//	  HAL_Delay(500);
+//	  usb_printf("openmv4 plus board cdc test\r\n");
+//	  TFT_LCD_RGB565_run();
+	  JPEG_run();
   }
   /* USER CODE END 3 */
 }
@@ -183,6 +193,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+  HAL_RCC_MCOConfig(RCC_MCO1, RCC_MCO1SOURCE_HSI48, RCC_MCODIV_1);
 }
 
 /* USER CODE BEGIN 4 */
