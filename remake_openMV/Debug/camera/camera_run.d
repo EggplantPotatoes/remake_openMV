@@ -38,10 +38,10 @@ camera/camera_run.o: ../camera/camera_run.c ../camera/camera_run.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h \
  ../camera/ov5640.h ../camera/ov5640_cfg.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/lcd_display.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/st7735.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/st7735.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/user_bsp/usb_vcp.h
+ E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/lcd_display.h \
+ E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/st7735.h \
+ E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/st7735.h \
+ E:/Jundong/Git/remake_openMV/remake_openMV/user_usb/usb_vcp.h
 ../camera/camera_run.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
@@ -84,7 +84,7 @@ camera/camera_run.o: ../camera/camera_run.c ../camera/camera_run.h \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h:
 ../camera/ov5640.h:
 ../camera/ov5640_cfg.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/lcd_display.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/st7735.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/st7735.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/user_bsp/usb_vcp.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/lcd_display.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/st7735.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/st7735.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/user_usb/usb_vcp.h:

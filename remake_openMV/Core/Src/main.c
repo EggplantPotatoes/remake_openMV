@@ -106,8 +106,8 @@ int main(void)
   lcd_init();
   FatFs_read_Check();
   FatFs_write_Check();
-//  camera_RGB565_init();
-  camera_JPEG_init();
+  camera_RGB565_init();
+//  camera_JPEG_init();
 
   /* USER CODE END 2 */
 
@@ -125,8 +125,8 @@ int main(void)
 //	  HAL_GPIO_TogglePin(LED_B_GPIO_Port,LED_B_Pin);
 //	  HAL_Delay(500);
 //	  usb_printf("openmv4 plus board cdc test\r\n");
-//	  TFT_LCD_RGB565_run();
-	  JPEG_run();
+	  TFT_LCD_RGB565_run();
+//	  JPEG_run();
   }
   /* USER CODE END 3 */
 }

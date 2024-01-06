@@ -43,8 +43,8 @@ SD_FatFS/file_system.o: ../SD_FatFS/file_system.c \
  ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/user_diskio.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/lcd_display.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/st7735.h
+ E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/lcd_display.h \
+ E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/st7735.h
 ../SD_FatFS/file_system.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
@@ -93,5 +93,5 @@ SD_FatFS/file_system.o: ../SD_FatFS/file_system.c \
 ../Middlewares/Third_Party/FatFs/src/diskio.h:
 ../Middlewares/Third_Party/FatFs/src/ff.h:
 ../FATFS/Target/user_diskio.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/lcd_display.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/st7735.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/lcd_display.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/st7735.h:

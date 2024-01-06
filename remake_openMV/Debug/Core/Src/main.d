@@ -47,11 +47,11 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../USB_DEVICE/App/usb_device.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
  ../USB_DEVICE/Target/usbd_conf.h ../Core/Inc/gpio.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/lcd_display.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/st7735.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/SD_FatFS/file_system.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/user_bsp/usb_vcp.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/camera/camera_run.h
+ E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/lcd_display.h \
+ E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/st7735.h \
+ E:/Jundong/Git/remake_openMV/remake_openMV/SD_FatFS/file_system.h \
+ E:/Jundong/Git/remake_openMV/remake_openMV/user_usb/usb_vcp.h \
+ E:/Jundong/Git/remake_openMV/remake_openMV/camera/camera_run.h
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -109,8 +109,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
 ../USB_DEVICE/Target/usbd_conf.h:
 ../Core/Inc/gpio.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/lcd_display.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/SPI_LCD/st7735.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/SD_FatFS/file_system.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/user_bsp/usb_vcp.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/camera/camera_run.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/lcd_display.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/SPI_LCD/st7735.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/SD_FatFS/file_system.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/user_usb/usb_vcp.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/camera/camera_run.h:

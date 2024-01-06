@@ -39,8 +39,8 @@ camera/ov5640.o: ../camera/ov5640.c ../camera/ov5640.h ../Core/Inc/main.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h \
  ../camera/ov5640_cfg.h ../camera/ov5640_reg.h \
  ../Drivers/CMSIS/Include/cmsis_compiler.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/user_bsp/IIC_bus.h \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/user_bsp/usb_vcp.h
+ E:/Jundong/Git/remake_openMV/remake_openMV/user_bsp/IIC_bus.h \
+ E:/Jundong/Git/remake_openMV/remake_openMV/user_usb/usb_vcp.h
 ../camera/ov5640.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
@@ -84,5 +84,5 @@ camera/ov5640.o: ../camera/ov5640.c ../camera/ov5640.h ../Core/Inc/main.h \
 ../camera/ov5640_cfg.h:
 ../camera/ov5640_reg.h:
 ../Drivers/CMSIS/Include/cmsis_compiler.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/user_bsp/IIC_bus.h:
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/user_bsp/usb_vcp.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/user_bsp/IIC_bus.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/user_usb/usb_vcp.h:

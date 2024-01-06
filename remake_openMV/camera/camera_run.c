@@ -187,10 +187,10 @@ void TFT_LCD_RGB565_run(void)
 {
 
 	/* 获取图像数据,数据存储在framebuffer中*/
-    memset((void *)framebuffer, 0, IMAGE_WIDTH*IMAGE_WIDTH*2);
-    ov5640_dcmi_start(OV5640_OUTPUT_FORMAT_RGB565,(uint32_t)&framebuffer,IMAGE_WIDTH*IMAGE_WIDTH/2 );
+    memset((void *)framebuffer, 0, IMAGE_WIDTH*IMAGE_HEIGHT*2);
+    ov5640_dcmi_start(OV5640_OUTPUT_FORMAT_RGB565,(uint32_t)&framebuffer,IMAGE_WIDTH*IMAGE_HEIGHT/2 );
 	/* 显示至LCD */
-    lcd_display_image(0,0,IMAGE_WIDTH,IMAGE_WIDTH,framebuffer);
+    lcd_display_image(0,0,IMAGE_WIDTH,IMAGE_HEIGHT,framebuffer);
     //使用画点的方式显示，刷新频率较慢
 //    	for (height_index=0; height_index<RGB565_OUTPUT_HEIGHT; height_index++)
 //	{

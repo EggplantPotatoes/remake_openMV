@@ -1,5 +1,5 @@
 FATFS/Target/user_diskio.o: ../FATFS/Target/user_diskio.c \
- F:/STM32_camera/remake_openMV/source_code/remake_openMV/SD_FatFS/sdmmc_driver.h \
+ E:/Jundong/Git/remake_openMV/remake_openMV/SD_FatFS/sdmmc_driver.h \
  ../Core/Inc/main.h ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -42,7 +42,7 @@ FATFS/Target/user_diskio.o: ../FATFS/Target/user_diskio.c \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/integer.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/ffconf.h
-F:/STM32_camera/remake_openMV/source_code/remake_openMV/SD_FatFS/sdmmc_driver.h:
+E:/Jundong/Git/remake_openMV/remake_openMV/SD_FatFS/sdmmc_driver.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:

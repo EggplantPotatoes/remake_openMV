@@ -74,8 +74,8 @@ all: main-build
 main-build: remake_openMV.elf secondary-outputs
 
 # Tool invocations
-remake_openMV.elf remake_openMV.map: $(OBJS) $(USER_OBJS) F:\STM32_camera\remake_openMV\source_code\remake_openMV\STM32H743IIKX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "remake_openMV.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"F:\STM32_camera\remake_openMV\source_code\remake_openMV\STM32H743IIKX_FLASH.ld" --specs=nosys.specs -Wl,-Map="remake_openMV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+remake_openMV.elf remake_openMV.map: $(OBJS) $(USER_OBJS) E:\Jundong\Git\remake_openMV\remake_openMV\STM32H743IIKX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "remake_openMV.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"E:\Jundong\Git\remake_openMV\remake_openMV\STM32H743IIKX_FLASH.ld" --specs=nosys.specs -Wl,-Map="remake_openMV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
